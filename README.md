@@ -6,10 +6,10 @@ Refer to https://stackoverflow.com/questions/59899533/
     SPLUNK_HOME = /opt/splunk
     cd $SPLUNK_HOME
     git clone git@github.com:sduff/splunk_app_with_libs.git
-    pip install pyOpenSSL -t $SPLUNK_HOME/etc/apps/splunk_app_with_libs/bin
-    pip install boxsdk -t $SPLUNK_HOME/etc/apps/splunk_app_with_libs/bin
-    pip install pyJWT -t $SPLUNK_HOME/etc/apps/splunk_app_with_libs/bin
-    pip install boto3 -t $SPLUNK_HOME/etc/apps/splunk_app_with_libs/bin
+    pip install pyOpenSSL -t $SPLUNK_HOME/etc/apps/splunk_app_with_libs/bin/lib
+    pip install boxsdk -t $SPLUNK_HOME/etc/apps/splunk_app_with_libs/bin/lib
+    pip install pyJWT -t $SPLUNK_HOME/etc/apps/splunk_app_with_libs/bin/lib
+    pip install boto3 -t $SPLUNK_HOME/etc/apps/splunk_app_with_libs/bin/lib
     /opt/splunk/bin/splunk restart
     # Then log into splunk, and run the following search
     | searchcommand
