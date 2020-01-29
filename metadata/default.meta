@@ -1,0 +1,3 @@
+[commands/searchcommand]
+access = read : [ * ], write : [ admin ]
+export = system
